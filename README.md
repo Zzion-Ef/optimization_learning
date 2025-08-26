@@ -16,12 +16,8 @@
   https://www.bilibili.com/video/BV1L2u7z7Egp/?spm_id_from=333.1387.upload.video_card.click
 
 📌**project1：简单的二元二次规划（凸函数+凸约束）**
-  1. 问题描述
-
-
-$$
-f(x_1,x_2) = (x_1 - 1)^2 + (x_2-1)^2 \\ s.t. 0\leq x_1\leq1.5;0\leq x_2\leq1.5
-$$
+  1. 问题描述\
+     $$f(x_1,x_2) = (x_1 - 1)^2 + (x_2-1)^2 \\ s.t. 0\leq x_1\leq1.5;0\leq x_2\leq1.5$$
 
 
      求： $f_{min}$，以及令 $f=f_{min}$ 时的 $x_1,x_2$
