@@ -23,15 +23,76 @@
 
      求： $f_{min}$，以及令 $f=f_{min}$ 时的 $x_1,x_2$
 
+## 2. 问题分析
 
-  3. 问题分析
-      1. 将目标函数转化成标准形式：\
-         $$f(x_1,x_2) = x_1^2 + x_2^2 - 2x_1 -2x_2 + 2$$\
-         常数项2可以省去，则原式可替换为：\
-         $$f(x_1,x_2) = x_1^2 + x_2^2 - 2x_1 -2x_2$$\
-         $$=\frac{1}{2}$$ $\begin{bmatrix}x_1\\x_2\\end{bmatrix}$
-          
-      3. 将约束转化成向量形式
+### a. 将目标函数转化成标准形式
+
+$$ f\left(x_{1}, x_{2}\right)=x_{1}^{2}+x_{2}^{2}-2 x_{1}-2 x_{2}+2 $$
+
+其中最后的"2"为常数项，不影响取到最小值时的坐标，因此可以省略，并转成标准形式：
+
+$$ f\left(x_{1}, x_{2}\right)=x_{1}^{2}+x_{2}^{2}-2 x_{1}-2 x_{2} $$
+
+$$ =\frac{1}{2} \left[\begin{array}{ll}
+x_{1} \\
+x_{2}
+\end{array}\right]^{T} \left[\begin{array}{cc}
+2 & 0 \\
+0 & 2
+\end{array}\right] \left[\begin{array}{l}
+x_{1} \\
+x_{2}
+\end{array}\right]+\left[\begin{array}{cc}
+-2 & -2
+\end{array}\right]^{T} \left[\begin{array}{l}
+x_{1} \\
+x_{2}
+\end{array}\right] $$
+
+### b. 将约束转化成向量形式
+
+$$ \left[\begin{array}{l}
+0 \\
+0
+\end{array}\right] \leq \left[\begin{array}{ll}
+1 & 0 \\
+0 & 1
+\end{array}\right] \left[\begin{array}{l}
+x_{1} \\
+x_{2}
+\end{array}\right] \leq \left[\begin{array}{l}
+-2 \\
+-2
+\end{array}\right] $$
+
+### 标准形式矩阵表示
+
+综上，可以得到标准形式里各矩阵对应的值：
+
+$$
+\begin{array}{l}
+P=\left[\begin{array}{ll}
+2 & 0 \\
+0 & 2
+\end{array}\right] \\
+q=\left[\begin{array}{c}
+-2 \\
+-2
+\end{array}\right] \\
+l=\left[\begin{array}{l}
+0 \\
+0
+\end{array}\right] \\
+A=\left[\begin{array}{ll}
+1 & 0 \\
+0 & 1
+\end{array}\right] \\
+u=\left[\begin{array}{l}
+-2 \\
+-2
+\end{array}\right]
+\end{array}
+$$
          
   4. 对应代码
   5. 运行结果
