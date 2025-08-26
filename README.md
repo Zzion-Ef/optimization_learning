@@ -3,21 +3,7 @@
   ![](https://secure2.wostatic.cn/static/b4fGT9bVXC458VAi1PftHk/image.png?auth_key=1756186845-i7aQKkUN3YGZgTAi4Yf3Hr-0-5cdf349f4d7a5ebf0e30cbb7ee67a8e1)
 
   **问题描述：**
-
-  OSQP 求解如下形式的凸二次规划（QPs）问题：
-
-$$
-\begin{aligned}\\& min \quad \frac{1}{2} x^{T} P x + q^{T} x \\& s.t. \quad l \leq A x \leq u\\\end{aligned}
-$$
-
-  其中$x\in\mathbf{R}^{n}$ 是优化变量。
-
-  目标函数由半正定矩阵$P \in \mathbf{S}^{n}_{+}$ 和向量$q\in\mathbf{R}^{n}$ 定义。
-
-  线性约束由矩阵$A \in \mathbf{R}^{m \times n}$ 以及向量$l$ 和$u
- $ 定义。
-
-  使得对于所有$i \in \{1, \ldots, m\}$，有$l_{i} \in \mathbf{R} \cup\{-\infty\}$ 且$u_{i} \in \mathbf{R} \cup\{-\infty\}$
+![](https://secure2.wostatic.cn/static/fjWiUndYqLu5G49ZuP8BEc/c6a18c5ddbcd609ddd9172345a55a6a7.jpg?auth_key=1756187240-45x1QC45BBsozpY4PLxQ5T-0-ebf6b4d5f493160db71955972cdb0dc5)
 
 🔧**环境配置**
 
