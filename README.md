@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🔧环境配置
 
   ubuntu 22.04 + eigen v3.4.0 + osqp v1.0.0 + osqp-eigen v0.10.0
