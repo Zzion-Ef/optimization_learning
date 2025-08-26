@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 🔧环境配置
 
   ubuntu 22.04 + eigen v3.4.0 + osqp v1.0.0 + osqp-eigen v0.10.0
@@ -9,7 +8,7 @@
 
   https://www.bilibili.com/video/BV1L2u7z7Egp/?spm_id_from=333.1387.upload.video_card.click
 
-📌示例1
+📌示例1.das
   1. 问题描述
   2. 对应代码
   3. 
